@@ -1,0 +1,306 @@
+#EX0.1
+"""
+Declara uma variável chamada "idade" e atribuiu a tua idade.
+Declara uma variável chamada "nome" e atribuiu o teu nome.
+Imprima no ecrã a frase "O meu nome é [nome] e tenho [idade] anos."
+"""
+idade = input("insira a sua idade: ")
+nome = input("insira o seu nome: ")
+print(f"o meu é {nome} e tenho {idade} anos. "); 
+-------------------------------------------------------------------------------------
+#EX0.2
+""" 
+Escreve um programa que imprima "Olá, mundo!" no ecrã.
+Cria uma variável chamada "fruta" e atribuiu o nome de uma fruta.
+Imprime no ecrã a frase "Eu gosto de [fruta]."
+"""
+print("olá mundo!");
+fruta = "banana"; 
+print(f"eu gosto de {fruta}");
+-------------------------------------------------------------------------------------
+#EX0.3
+"""
+Solicita ao utilizador para digitar o nome.
+Imprime no ecrã uma saudação personalizada utilizando o nome fornecido.
+Pede ao utilizador para digitar um número inteiro.
+Imprime o dobro desse número.
+"""
+nome = input("digite o seu nome: ")
+print(f"Como é que tamos oh irmoum, {nome}, é tass bem!")
+valor = int(input("insira um número: ")
+dobro = valor * 2 
+print(f"o dobro de {valor} é {dobro}")
+-------------------------------------------------------------------------------------
+#EX1.1
+"""
+Elabora um programa que imprima a mensagem “Bem-vindos ao Python!”, precedida por uma linha em branco
+"""
+
+a = "\n"
+print("\nBem-vindos ao Python!")
+-------------------------------------------------------------------------------------
+#EX1.2 
+"""
+Elabora um programa que imprima a mensagem “José, bem-vindo ao Python!”, precedida por uma linha em branco
+"""
+a = "\n"
+print("\nJosé, bem-vindo ao Python!")
+-------------------------------------------------------------------------------------
+#EX1.3
+"""
+Elabora um programa que atribua a mensagem a uma variável e, em seguida, imprima o valor da variável.
+"""
+carro = "Mazda RX7"
+print(carro)
+print(f"\nO meu carro é {carro}.")
+-------------------------------------------------------------------------------------
+#EX1.4
+"""
+Elabora um programa que atribua o nome, a idade e a localidade de residência do aluno a três variáveis e imprima os valores dessas variáveis.
+"""
+nome = "Orochi"
+idade = "14"
+localidade = "Cabeçudos"
+print(f"O meu nome é {nome}, tenho {idade} anos e moro em {localidade}.")
+-------------------------------------------------------------------------------------
+#EX1.5
+"""
+Elabora um programa que intercale a designação da linguagem de programação e o nome do aluno na mensagem
+"""
+linguagem = "Python"
+nome = "Orochi"
+print(f"Estou a aprender {linguagem} e o meu nome é {nome}. ")
+------------------------------------------------------------------------------------
+#EX1.6
+"""
+Elabora um programa que alinhe à direita, à esquerda e ao centro a mensagem “Bem-vindo ao Python!” num campo de edição com 50 carateres.
+"""
+print(f"{'left aligned text' : <50}")
+print(f"{'center aligned text' : ^50}")
+print(f"{'right aligned text' : >50}")
+
+
+print(f"{'Bem vindos ao Python' : <50}")
+print(f"{'Bem vindos ao Python' : ^50}")
+print(f"{'Bem vindos ao Python' : >50}")
+------------------------------------------------------------------------------------
+#EX1.7
+"""
+Elabora um programa que desenvolva o algoritmo de um programa que permita calcular o perímetro e área de uma circunferência a partir do valor do raio.
+"""
+raio = float(input("insira o raio:"))
+perimetro = 2 * 3.14 * raio
+area = 3.14 * raio ** 2
+print(f"o perimetro é {perimetro} e a area é {area}") 
+------------------------------------------------------------------------------------
+#EX1.8
+"""
+Elabora um programa que imprima a data e horas correntes nos seguintes formatos:
+- 02-10-2024
+- 02-10-2024 16:11:20
+- 10-02-2024 16:11:20
+- 02/10/24
+- 16:11:20
+""" 
+import datetime 
+data = datetime.datetime.now()
+dia = data.strftime("%d")
+mes = data.strftime("%m")
+ano = data.strftime("%Y")
+hora = data.strftime("%H")
+minutos = data.strftime("%M")
+segundos = data.strftime("%S")
+print(f"{dia}-{mes}-{ano}")
+print(f"{dia}-{mes}-{ano} {hora}:{minutos}:{segundos}")
+print(f"{mes}-{dia}-{ano} {hora}:{minutos}:{segundos}")
+print(f"{mes}/{dia}/{ano}")
+print(f"{hora}:{minutos}:{segundos}")
+------------------------------------------------------------------------------------
+#EX1.9
+"""
+Elabora um programa que leia o número mecanográfico de um atleta, assim como a sua pontuação. O número é inteiro e a pontuação final é real.
+Digite o número do atleta: 12304
+Digite a pontuação final: 7.89
+O atleta número 12304 obteve 7.89 pontos.
+"""
+print=input("Digite o número do atleta=" )
+print=input("Digite a pontuação final do atleta=" )
+print=input(f"o numero do atleta é {print} e a pontuação final do atleta é {print}")
+--------------------------------------------------------------------------------------------
+#EX1.10
+"""
+Elabora um programa que leia a data de nascimento de uma pessoa e imprima a sua idade à data atual.
+"""
+import datetime
+birthdate= "30-08-2009"
+day,month,year=map(int,birthdate.split("-"))
+today=datetime.date.today()
+age=today.year-year-((today.month,today.day)<(month,day))
+print(age)
+----------------------------------------------------------------------------------------------
+#EX1.11
+"""Elabora um programa que desenvolva o algoritmo de um programa que permita converter libras em euros, considerando a taxa de conversão de 1,20 ( ou seja, 1 GBP = 1,20 EURO).
+"""
+libras = input("Insira o valor em libras: ")
+libras = float(libras)
+euros = libras * 1.20
+print("O valor em euros é: ", euros)
+#FP1
+"""Verificar se um número é positivo, negativo ou zero.
+Escreve um programa em Python que peça ao utilizador para introduzir um número e verifica se ele é positivo, negativo ou igual a zero.
+Dica: Usa as estruturas condicionais if, elif e else.
+"""
+print(f"Mete um número e verifica se é positivo, negativo ou zero.")
+numero = int(input("Introduz um número: "))
+if numero > 0:
+ print(f"O número {numero} é positivo.")
+elif numero <0:
+ print(f"O número {numero} é negativo.")
+else:
+ print(f"O número {numero} é igual a zero.")
+#FP2
+"""Verificar se um número é par ou ímpar.
+Escreve um programa que peça ao utilizador um número inteiro e verifica se ele é par ou ímpar.
+Dica: Para verificar se um número é par, utilize a operação de módulo %.
+"""
+
+numero=int(input(f"Insira um numero: "))
+if numero % 2 == 0:
+  print("O numero é par")
+else: 
+  print("O numero é impar")
+#eXERCICO FP3
+"""Calcular a nota final de um aluno.
+Elabora um programa que pergunte ao utilizador a nota final de um aluno e verifica a classificação de acordo com a seguinte tabela:
+
+Nota inferior a 10: Reprovado
+Nota entre 10 e 14: Suficiente
+Nota entre 15 e 17: Bom
+Nota superior a 17: Muito Bom
+"""
+nota=int(input(f"Mete a tua nota final"))
+if nota < 10:
+  print(f"Reprovaste és fraco,nem a copiar passas")
+if nota == 10:
+  print(f"Á rasquinha só passas a fazer escova")
+elif nota > 10 and nota < 14:
+  print(f"Passaste!suficiente")
+if nota == 15:
+  print(f"És mediano mas ainda falta pra seres rei")
+elif nota > 15 and nota < 17:
+  print(f"És o rei!Estás a ir bem")
+if nota == 17:
+    print(f"És o futuro goat ")
+if nota > 17:
+  print(f"És o goat do phython és o meu ÍDOLO")
+#Exercicio FP4
+"""Conversor de temperaturas.
+Cria um programa que pergunte ao utilizador uma temperatura em graus Celsius e a converta para Fahrenheit, Kelvin ou ambas. O utilizador deve escolher a unidade de destino (Fahrenheit ou Kelvin), e o programa deve exibir o valor convertido.
+Fórmulas:
+
+Fahrenheit = Celsius * 9/5 + 32
+Kelvin = Celsius + 273.15
+"""
+Celcius=float(input("Insira a temperatura em graus Celsius: "))
+Fahrenheit = (Celcius * 9/5) + 32
+Kelvin = Celcius + 273.15
+opção = str(input("Escolhe a comversão para Fahrenheit (F), Kelvin(K) ou Ambas(A)"))
+if opção == "F":
+  print (f"O valor em fahrenheit é {Fahrenheit}") 
+elif opcao == "(K)":
+  print (f"O valor em kelvin é {Kelvin} ")
+elif opcao == "A":
+  print (f"O valor em fahrenheit é {Fahrenheit} e em kelvin é {Kelvin}")
+else:
+ print ("Opção inválida")
+ ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#fp5
+salario =int(input("Mete o teu salário mensal: "))
+imposto1 = salario * 0.10
+imposto2 = salario * 0.20
+percentagem1 = salario - imposto1
+percentagem2 = salario - imposto2
+if salario <1000:
+  print("Os impostos não vão sair do teu bolso")
+elif salario> 1001 and salario <2001:
+  print(f"O teu salario apos impostos:{percentagem1} ")
+else:
+  print(f"Salario apos impostos:{percentagem2} ")
+
+
+#FP6 """Imprimir números de 1 a 10.
+"""Escreve um programa em Python que use um ciclo for para imprimir todos os números de 1 a 10."""
+for i in range(1,11):
+print(i)
+ #FP7 Soma de números de 1 a 100.
+"""Escreve um programa que use um ciclo while para calcular a soma de todos os números de 1 a 100."""
+soma = 0
+i = 1
+while i <= 100:
+    soma += i
+    i += 1
+print("A soma de 1 a 100 é:", soma)
+#FP8: Contagem de vogais numa string.
+"""Escreve um programa que peça ao utilizador para introduzir uma frase e utilize um ciclo for para contar quantas vogais (a, e, i, o, u) existem na frase."""
+frase=input(f"Mete uma frase: ")
+vogais= 0
+for letra in frase:
+  if letra in "aeiouAEIOU":
+    vogais += 1
+print(f"A frase tem {vogais} vogais.")
+#FP9
+"""Listar múltiplos de 5.
+ Escreve um programa que utilize um ciclo for para listar todos os múltiplos de 5 entre 1 e 50."""
+for i in range(1,51):
+  if i%5==0:
+    print(i)
+   #Exercício FP10
+   """Verificar se um número é primo.
+   Escreve um programa que crie uma lista de 5 números inteiros, pede ao utilizador para introduzir cada número e, em seguida, calcula e exibe a média desses números."""
+
+   num1 =input(f"Mete o numero1: ")
+   num2 = input(f"Mete o numero2: ")
+   num3 = input(f"Mete o numero3: ")
+   num4 = input(f"Mete o numero4: ")
+   num5 = input(f"Mete o numero5: ")
+   media = (float(num1) + float(num2) + float(num3) + float(num4) + float(num5))/5
+   print(f"A media é {media}")
+   #Exercício FP10
+   """Verificar se um número é primo.
+   Escreve um programa que crie uma lista de 5 números inteiros, pede ao utilizador para introduzir cada número e, em seguida, calcula e exibe a média desses números."""
+   notas=[]
+   for i in range (1,6):
+    num = int(input("Escreva um número inteiro: "))
+    notas.append(num)
+   print(notas)
+   valor1=notas[0]
+   valor2=notas[1]
+   valor3 =notas[2]
+   valor4 =notas[3]
+   valor5 =notas[4]
+   total = (valor1 +valor2 +valor3+valor4+valor5)/5
+   print(f"a média é: {total}")
+#FP11
+"""Média de uma lista de números.
+Escreve um programa que peça ao utilizador um número inteiro e verifique se ele é primo. Um número primo é divisível apenas por 1 e por ele mesmo. O programa deve utilizar um ciclo for para testar se o número é divisível por algum outro número.
+"""
+numero = int(input("insira um numero inteiro: "))
+divisores = 0
+for i in range (1, numero +1):
+  if numero % i == 0:#verifica se o resultado da divisão é 0
+    divisores +=1 #incrementa o contador de divisores
+if divisores == 2:
+  print("é um numero primo")
+else:
+  print("não é um numero primo")
+ #FP12
+""" Gerar uma lista de números pares.
+ Cria um programa que utilize a função range() e um ciclo for para gerar uma lista com todos os números pares entre 1 e 20 e imprima a lista."""
+for x in range(0,22,2):
+  print(x)
+#FP13 
+"""Inverter uma string.
+  Escreve um programa que peça ao utilizador para introduzir uma palavra ou frase e utilize um ciclo para imprimir a string invertida."""
+texto = str(input("Insira um texto :"))
+textoinv =texto [::-1]
+print(textoinv)
